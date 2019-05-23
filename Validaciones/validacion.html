@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+ <head>
+  <meta charset="utf-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" href="estiloFormulario.css" media="screen" >
+  <script language="JavaScript" type="text/javascript" src="validacion.js" ></script>
+
+  
+ </head>
+ 
+ <body background="fondo.jpg">
+	<!----<div id="fondo"> -->
+			<section class="group">
+		<form action="pagina.php" method="POST" id="formulario" name="formulario" >
+
+			<h2>Formulario de Registro</h2>
+
+			<label>Cedula:</label>
+			<input type="texto" id="cedula" name="cedula" value=""  onblur="validarCedula();" placeholder="Ingrese la cedula">*&nbsp; &nbsp;<label id="salida"> </label>
+			<br>
+			
+			<label>Nombres:</label>
+			<input type="texto" id="nombre" name="nombre" value=""  onblur="validarSoloLetras(event);" placeholder="Ingrese sus dos nombres">*&nbsp; &nbsp;<label id="salida1"></label><br>
+			
+			<label>Apellidos:</label>
+			<input type="texto" id="apellido" name="apellido" value="" onblur="validarSoloLetras1();" placeholder="Ingrese sus dos apellidos">*&nbsp; &nbsp;<label id="salida2"></label><br>
+			
+			<label>Telefono:</label>
+			<input type="texto" id="telefono" name="telefono" value="" onblur="validarSoloNumero();"placeholder="Ingrese su telefono">*&nbsp; &nbsp;<label id="salida3"></label><br>
+
+			<label for="fecha">Fecha Nacimiento </label>
+			<input type="date" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese su fecha de nacimiento ..." required />*<br>
+        
+			<label>Dirección:</label>
+			<input type="texto" id="direccion" name="direccion" value="" placeholder="Ingrese su direccion">*<br>
+			
+			<label>Correo:</label>
+			<input type="texto" id="correo" name="correo" value="" onblur="validarCorreo();" placeholder="Ingrese su correo electronico">*&nbsp; &nbsp;<label id="salida4"></label><br>
+		
+			
+			<input type="submit" id="enviar" value="Enviar" name="boton1" onclick="return validarCamposObli(this);" href='pagina.php'/>
+    	<!--  <input type="submit" id="enviar" value="Enviar" name="boton1"/>  -->
+		<!--	 <input type="button" id="cancelar" value="Cancelar" />  -->
+			 <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+			
+			
+			<div id="mensaje"></div>
+			
+		</form>
+	</section>
+	<!-- </div> --> 	
+	
+ </body>
+ </html>

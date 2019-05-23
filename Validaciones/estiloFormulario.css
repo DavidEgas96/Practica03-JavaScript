@@ -1,0 +1,42 @@
+html{
+	background-color: #cccc99;
+	height: 100%;
+}
+
+body{
+	background-color: olivedrab;
+	margin-left: auto;
+	margin-right: auto;
+	min-height:100%;
+	max-width: 960px;
+	min-width: 640px;
+	width: 80%;
+}
+
+#fondo{
+	display: block;
+	width: 500px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+	padding: 10px;
+	
+}
+
+label{
+	font-size: 20px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+input{
+	size: 50px;
+	margin-bottom: 10px;
+}
+
+.group {
+	
+	padding: 20px;
+	
+}
